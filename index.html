@@ -3,10 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Movie quiz</h1>
+    <p>Lights, camera, action! Get ready to test your knowledge of the silver screen with our thrilling movie quiz. Whether you're a film aficionado or a casual moviegoer, this quiz is designed to challenge your cinematic expertise.
+        Dive into the fascinating world of movies as we take you through iconic scenes, legendary quotes, and unforgettable characters. From classic masterpieces to the latest blockbusters, our quiz covers a wide range of genres and eras. <br><br>
+        Lights will dim, questions will roll, and the applause awaits. Break a leg, movie buff!</p>
+
+        <div id="questions"> 
+
+            <label for="first">1. If you watch the Marvel movies in chronological order, which movie would you start with?</label>
+            <input type="radio" name="first" value="CaptainAmerica">
+            <label for="first">Captain America</label>
+            <input type="radio" name="first" value="IronMan">
+            <label for="first">Iron Man</label>
+        <br>
+            <label for="second">2. What was in the box in Se7en?</label>
+            <input type="radio" name="second" value="hand">
+            <label for="second">A hand</label>
+            <input type="radio" name="second" value="head">
+            <label for="second">A head</label>
+            <br>
+            <p>3. In the lord of the rings What is the name of Saruman’s fortress?</p>
+            <input type="radio" name="third" value="mordor">
+            <label for="third">Mordor</label>
+            <input type="radio" name="third" value="isengard">
+            <label for="third">Isengard</label>
+            <br>
+            <p>4. Which movie has the line "Nobody puts Baby in the corner"? </p>
+            <input type="radio" name="fourth" value="grease">
+            <label for="fourth">Grease</label>
+            <input type="radio" name="fourth" value="dirtydancing">
+            <label for="fourth">Dirty Dancing</label>
+            <br>
+            <p>5. In the beginning of the movie Goodfellas, who says the line 'As far back as I can remember,</p>
+            <input type="radio" name="fifth" value="conway">
+            <label for="fifth">Jimmy Conway</label>
+            <input type="radio" name="fifth" value="henry">
+            <label for="fifth">Henry Hill</label>
+            <br>
+            <p>6. What African country would you be in if you were with Marty, Melman & Gloria?</p>
+            <input type="radio" name="sixth" value="kenya">
+            <label for="sixth">Kenya</label>
+            <input type="radio" name="sixth" value="ethiopia">
+            <label for="sixth">Ethiopia</label>
+            <input type="radio" name="sixth" value="madagascar">
+            <label for="sixth">Madagascar</label>
+            <input type="radio" name="sixth" value="wakanda">
+            <label for="sixth">Wakanda</label>
+            <br>
+            <p>7. Which of the following names are a Top Gun character?</p>
+            <input type="checkbox" name="seventh" value="raven">
+            <label for="seventh">Raven</label>
+            <input type="checkbox" name="seventh" value="goose">
+            <label for="seventh">Goose</label>
+            <input type="checkbox" name="seventh" value="phoenix">
+            <label for="seventh">Phoenix</label>
+            <input type="checkbox" name="seventh" value="maverick">
+            <label for="seventh">Maverick</label>
+            <br>
+            <p>8. Which city appears in the title of the 3rd movie The Fast and Furious franchise?</p>
+            <input type="radio" name="eight" value="rio">
+            <label for="eight">Rio de Janeiro</label>
+            <input type="radio" name="eight" value="miami">
+            <label for="eight">Miami</label>
+            <input type="radio" name="eight" value="tokyo">
+            <label for="eight">Tokyo</label>
+            <br>
+            <p>9. In The Matrix, does Neo take the blue pill or the red pill?</p>
+            <input type="radio" name="nine" value="red">
+            <label for="nine">Red</label>
+            <input type="radio" name="nine" value="blue">
+            <label for="nine">Blue</label>
+            <br>
+            <p>10. What did Zach Galifianakis call the baby in The Hangover? </p>
+            <input type="radio" name="ten" value="chavez">
+            <label for="ten">Chavez</label>
+            <input type="radio" name="ten" value="carlos">
+            <label for="ten">Carlos</label>
+            <input type="radio" name="ten" value="Jose">
+            <label for="ten">Jose</label>
+        </div>
+
+        <button id="checkAnswer">Submit</button>
+        <div id="result" class="result"></div>
+
+        <div id="resultModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="resultText"></p>
+            </div>
+        </div>
 </body>
 </html>
